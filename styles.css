@@ -1,0 +1,133 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+.bg {
+  background-color: #c8d8e4;
+}
+/* title */
+.app-title {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  font-size: 80px;
+  color: #52ab98;
+  font-family: "Source Code Pro", monospace;
+}
+.todo-list {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.todo-item {
+  margin-bottom: 10px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+}
+.todo-item span {
+  flex-grow: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 22px;
+}
+.done span {
+  text-decoration: line-through;
+}
+input[type="checkbox"] {
+  display: none;
+}
+.tick {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #333;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.tick::before {
+  content: "✓";
+  font-size: 20px;
+  display: none;
+}
+.done .tick::before {
+  display: inline;
+}
+.delete-todo {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+/* input form */
+form {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.form-container {
+  padding-bottom: 50px;
+}
+.js-form {
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #2b6777;
+  width: 80%;
+  height: 150px;
+  color: wheat;
+  margin: 0 auto;
+}
+.form-control {
+  width: 500px;
+}
+.taskdesc {
+  height: 300px;
+}
+label {
+  color: #ffffff;
+}
+.input-form {
+  background-color: #222083;
+  display: inline-block;
+  padding-top: 50px;
+  margin: 20px;
+  border-radius: 5px;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 3px solid #333;
+  border-radius: 4px;
+  border-radius: 10px;
+}
+/* Submit button */
+.sub-btn {
+  margin-top: 35px;
+  background-color: #f2f2f2;
+  color: #2b6777;
+  width: 90px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 6px;
+  font-size: 20px;
+  font-family: "Helvetica", Arial, sans-serif;
+}
+.task-submit {
+  width: 500px;
+}
+/* table of tasks */
+tr {
+  padding: 1% 2% 1% 2%;
+  border-radius: 40px;
+  background: #52ab98;
+}
